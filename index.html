@@ -28,8 +28,8 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
     
     <!-- Google Web Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -55,7 +55,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="homepage_parallax" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">
+  <body class="homepage_parallax" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100" style="overflow: none;">
     
     
     <!-- Preloader -->
@@ -282,7 +282,7 @@
     <!-- End Call to Action -->
 
     <!-- Start Video Section -->
-    <section class="video-bg fixed-height-small overlay-dark" style="">
+    <section class="video-bg fixed-height-small overlay-dark" style="color: white;">
         <div class="js-height-parent container">
             <!-- video setting -->
             <div class="video-player" data-property="{videoURL:'https://youtu.be/abeZIBWSdUo',containment:'.video-bg',autoPlay:true, mute:true, loop:true, showControls:false, startAt:11, stopAt:23, opacity:1}"></div>
@@ -426,7 +426,7 @@
                         </div><!--post info-->
                         
                         <div class="blog-post-body" style="background: white;">
-                            <h4><a class="title" href="blog.fmmconsultancy.com">Domain Availability</a></h4>
+                            <h4><a class="title" href="blog.fmmconsultancy.com/domain_availability.html">Domain Availability</a></h4>
                             <p class="p-bottom-20">Looking for a premium domain for your business? <br>Or maybe looking to increase your domain portfolio? <br>This python scripts helps you finding your next best domain.</p>
                             <a href="blog.fmmconsultancy.com" class="read-more">Read More >></a>
                         </div><!--post body-->                   
@@ -537,16 +537,16 @@
         <!-- === Testimonials === -->
         <div id="owl-testimonials" class="owl-carousel owl-theme testimonial text-center">
 
+            <!-- === Testimonial item 2 === -->
+              <div class="testimonial-item text-center">
+                <p class="testimonial-desc">With highly competent professionalism, a solid technical background, committed to deadlines and quality. They are a reference both in soft skills and hard skills with extreme ease in absorbing and understanding any given paradigm… assertive, innovative, out of the box thinking and detail-oriented. <br>Definitely a great asset for any Devops / Linux Administration Project. <br>With this company you can't go wrong.</p>
+                <h5 class="testimonial-author">Cláudia Figueira at Decskill</h5>
+            </div>
+
             <!-- === Testimonial item 1 === -->
               <div class="testimonial-item text-center">
                 <p class="testimonial-desc">If you liked any of our services or solutions, please don't hesitate in leaving a testimonial for future display here.</p>
                 <h5 class="testimonial-author">FMM Consultancy</h5>
-            </div>
-
-            <!-- === Testimonial item 2 === -->
-              <div class="testimonial-item text-center">
-                <p class="testimonial-desc">This is a testimony text.</p>
-                <h5 class="testimonial-author">Someone at Decskill</h5>
             </div>
 
         </div> <!-- /#owl-testimonials -->
@@ -565,12 +565,17 @@
 
                     <!-- === Client -1 === -->
                     <div class="col-md-2 col-sm-6 col-xs-12 text-center">
-                        <img class="img-responsive" src="img/client/3.png" alt="">
+                        <img class="img-responsive" src="img/clients/3.png" alt="">
                     </div>
 
                     <!-- === Client -2 === -->
                     <div class="col-md-2 col-sm-6 col-xs-12 text-center">
-                        <img class="img-responsive" src="img/client/4.png" alt="">
+                        <img class="img-responsive" src="img/clients/4.png" alt="">
+                    </div>
+
+                    <!-- === Client -3 === -->
+                    <div class="col-md-2 col-sm-6 col-xs-12 text-center" style="width: 8%;">
+                        <img class="img-responsive" src="img/clients/4.png" alt="">
                     </div>
 
                     <!-- === Client 1 === -->
@@ -580,17 +585,17 @@
 
                     <!-- === Client 2 === -->
                     <div class="col-md-2 col-sm-6 col-xs-12 client-item text-center">
-                        <img class="img-responsive" src="img/clients/zap.png" alt="" style="max-height: 38px;">
-                    </div>
-
-                    <!-- === Client 5 === -->
-                    <div class="col-md-2 col-sm-6 col-xs-12 client-item text-center">
                         <img class="img-responsive" src="img/clients/empty.png" alt="" style="max-height: 38px;">
                     </div>
 
-                    <!-- === Client 6 === -->
+                    <!-- === Client 3 === -->
+                    <div class="col-md-2 col-sm-6 col-xs-12  text-center">
+                        <img class="img-responsive" src="img/clients/empty.png" alt="" style="max-height: 38px;">
+                    </div>
+
+                    <!-- === Client 4 === -->
                     <div class="col-md-2 col-sm-6 col-xs-12 text-center">
-                        <img class="img-responsive" src="img/client/6.png" alt="">
+                        <img class="img-responsive" src="img/clients/6.png" alt="">
                     </div>
 
                 </div>
@@ -694,14 +699,14 @@
     <!-- Start Footer -->
     <footer class="site-footer">
         <div class="container">
-            <small class="copyright pull-left">Copyrights © 2022 All rights reserved by <a href="http://www.fmmconsultancy.com/">FMM Consultancy</a></small>
+            <small class="copyright pull-left">Copyrights © 2022 All rights reserved by <a href="https://www.fmmconsultancy.com/">FMM Consultancy</a></small>
             <div class="social-icon pull-right">
                 <a href="https://www.facebook.com/fmmconsultancy"><i class="fa fa-facebook"></i></a>
                 <a href="https://www.twitter.com/fmmconsultancy"><i class="fa fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/company/fmmconsultancy"><i class="fa fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/fmmconsultancy"><i class="fa fa-instagram"></i></a>
                 <a href="https://github.com/fmmconsultancy"><i class="fa fa-github"></i></a> <!-- fa-globe -->
-                <a href="#"><i class="fa fa-rss"></i></a>
+                <a href="https://www.fmmconsultancy.com"><i class="fa fa-rss"></i></a>
             </div>
             <!-- /social-icon -->
         </div>
