@@ -760,6 +760,7 @@
 
 
     <script>
+      document.addEventListener('touchstart', onTouchStart, {passive: true});
       $("[id$=_plan]").each(function(index, value) {
         var select = $(this);
         var plan = select.attr('value');
