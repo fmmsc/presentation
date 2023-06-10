@@ -1871,6 +1871,9 @@ blockquote {
 }
 .client-item img {
   max-width: 120px;
+  max-height: 31px;
+  height: 100%;
+  width: auto;"
   margin: 0 auto;
 }
 .client-type-2 .client-item {
