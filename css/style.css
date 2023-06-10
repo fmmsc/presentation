@@ -2025,6 +2025,18 @@ blockquote {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+@media only screen and (max-width: 600px) {
+  .site-footer .social-icon a i {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #a9a9a9;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
 .site-footer .social-icon a:hover i {
   background-color: #ed5f5e;
   color: #fff;
