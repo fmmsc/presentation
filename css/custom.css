@@ -9,3 +9,20 @@ URL:            http://www.tabthemes.com/
     Write Down your Own Custom CSS here. It is better choice than editing style.css file.
     Put it below of style.css file in the header.
 ---------------------------------------------------*/
+
+ /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.white-bg {
+  background-color: #FFFFFF;
+}

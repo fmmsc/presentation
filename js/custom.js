@@ -236,15 +236,6 @@ $(function () {
 
 
 /*--------------------------------------------------
-    Youtube Video Background
----------------------------------------------------*/
-
-  $(function() {
-      $(".video-player").YTPlayer();
-  });
-
-
-/*--------------------------------------------------
     CountTo Facts 
 ---------------------------------------------------*/
 
@@ -296,5 +287,98 @@ $(function () {
     });
   }
 
+  $("[id$=_plan]").each(function(index, value) {
+    var select = $(this);
+    var plan = select.attr('value');
+    var text = 'mailto:'+$('#company_email').html()+'?subject=FMM Website | '+plan+'&body=Hey, I\'m interested in the '+plan+'. (add observations here)';
+    select.on('click', function() {
+        $(location).prop('href', text);
+    });
+  });
+
+  $("#ajax-form").on('submit', function() {
+      $(location).prop('href', 'mailto:'+$('#company_email').html()+'?subject=FMM Website | Information&body=Hey, my name is '+$('#name').attr('value')+', I\'m from '+$('#company').attr('value')+'. '+$('#message').attr('value'));
+  });
+
+  var tpj = jQuery;
+
+  var revapi280;
+  tpj(document).ready(function() {
+      if (tpj("#rev_slider_280_1").revolution == undefined) {
+          revslider_showDoubleJqueryError("#rev_slider_280_1");
+      } else {
+          revapi280 = tpj("#rev_slider_280_1").show().revolution({
+              sliderType: "standard",
+              sliderLayout: "fullscreen",
+              dottedOverlay: "none",
+              delay: 90000,
+              navigation: {
+                keyboardNavigation:"off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation:"off",
+                onHoverStop:"off",
+                touch:{
+                  touchenabled:"on",
+                  swipe_threshold: 75,
+                  swipe_min_touches: 1,
+                  swipe_direction: "horizontal",
+                  drag_block_vertical: false
+                }
+                ,
+                arrows: {
+                      style: "uranus",
+                      enable: true,
+                      hide_onmobile: true,
+                      hide_under: 496,
+                      hide_onleave: true,
+                      hide_delay: 200,
+                      hide_delay_mobile: 1200,
+                      tmp: '',
+                      left: {
+                          h_align: "left",
+                          v_align: "center",
+                          h_offset: 20,
+                          v_offset: 0
+                      },
+                      right: {
+                          h_align: "right",
+                          v_align: "center",
+                          h_offset: 20,
+                          v_offset: 0
+                      }
+                  }
+              },
+              responsiveLevels: [1200, 991, 767, 480],
+              visibilityLevels: [1200, 991, 767, 480],
+              gridwidth: [1200, 991, 767, 480],
+              gridheight: [868, 768, 960, 720],
+              lazyType: "none",
+              parallax: {
+                type:"mouse+scroll",
+                origo:"slidercenter",
+                speed:2000,
+                levels:[2,3,4,5,6,7,12,16,10,50],
+                disable_onmobile:"on"
+              },
+              shadow: 0,
+              spinner: "spinner2",
+              autoHeight: "off",
+              fullScreenAutoWidth: "off",
+              fullScreenAlignForce: "off",
+              fullScreenOffsetContainer: "",
+              fullScreenOffset: "0",
+              disableProgressBar: "on",
+              hideThumbsOnMobile: "off",
+              hideSliderAtLimit: 0,
+              hideCaptionAtLimit: 0,
+              hideAllCaptionAtLilmit: 0,
+              debugMode: false,
+              fallbacks: {
+                  simplifyAll: "off",
+                  disableFocusListener: false,
+              }
+          });
+      }
+  }); /*ready*/
 
 });
